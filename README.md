@@ -1,11 +1,35 @@
-#EJERCICO DE HUNDIR LA FLOTA
-En esta actividad se ha recreado el clásico juego de Hundir la Flota. Para ello se ha considerado el desarrollo clasico del juego:
--Dos tableros, cada uno con su flota colocada 
--Dos jugadores
--Buena puntería
-##FUNCIONAMIENTO
-Recordemos que el juego constará de dos jugadores (en este caso tu y el PC). Ambos tendreis que colocar los barcos en el tablero vuestro tablero, creando asi la flota.
-Habrá una rotación de turnos en los que el objetivo será "disparar" y acertar a una posición del barco enemigo. El objetivo del juego consiste en hundir la flota enemiga conservando la tuya.
-##CÓDIGO
+¡Bienvenido a **Hundir la Flota**, una implementación del clásico juego de "Batalla Naval" desarrollada en Python! 
+
+## CARACTERÍSTICAS 📋
+
+- 🗺️ **Tablero interactivo** generado en consola.  
+- 🤖 Posibilidad de jugar contra la computadora.  
+- 🚢 **Colocación manual** de los barcos.  
+- 🏆 Sistema de seguimiento de puntuación.  
+- 🎨 Tablero en formato visual para mayor claridad.
+## FUNCIONAMIENTO
+Recordemos que el juego constará de dos jugadores (en este caso tú y el PC). 
+- ⚓ Configura tus barcos en el tablero accediendo a *utils*.
+- 💣  Atacar las coordenadas del enemigo.
+- 🎯 Tener buena puntería y hundir la flota enemiga.
+## CÓDIGO
 El código consiste en definir una serie de funciones que nos van a permitir jugar:
+- Crear tablero (tango el del jugador como el del PC)
+- Crear barcos de forma aleatoria para el PC
+- Colocar barcos
+  - De forma aleatoria para el PC
+  - Manualmente para el jugador
+- Disparar, que buscará la coincidencia de las coordenadas introducidas con los barcos enemigos
+- Juego
+🛠️ Para crear el jugo se ha hecho uso de funciones predefinidas para aplicarlas a la dinámica del juego y la librería de Numpy.
+## Juego
+Por apantalla nos aparecerá quien queremos que empiece, si empezamos nosotros a disparar tendremos que introducir las coordenadas para intentar das a la flota enemiga. En caso contrario comienza el PC con la misma dinámica.
+- 💧 Si fallamos nos restará una vida y pasaremos el turno al PC.
+- 💣 Si acertamos continuaremos dando nuevas coordenadas
+
+El intercambio de turnos continuará hasta que:
+  - 🏆 Haya un ganador(la otra flota esté hundida)
+  - 💀 Uno de los jugadores se quede sin vidas
+
+
   

@@ -20,8 +20,8 @@ El código consiste en definir una serie de funciones que nos van a permitir jug
   - De forma aleatoria para el PC
   - Manualmente para el jugador
 - Disparar, que buscará la coincidencia de las coordenadas introducidas con los barcos enemigos
-- Juego
-🛠️ Para crear el jugo se ha hecho uso de funciones predefinidas para aplicarlas a la dinámica del juego y la librería de Numpy.
+
+🛠️ Para crear el juego se ha hecho uso de funciones predefinidas para aplicarlas a la dinámica del juego y la librería de Numpy.
 ## JUEGO
 Por apantalla nos aparecerá quien queremos que empiece, si empezamos nosotros a disparar tendremos que introducir las coordenadas para intentar das a la flota enemiga. En caso contrario comienza el PC con la misma dinámica.
 - 💧 Si fallamos nos restará una vida y pasaremos el turno al PC.
